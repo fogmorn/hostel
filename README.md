@@ -19,4 +19,5 @@ Modules for "hostel" web app.
    HTML template for statement.
 
 - `css/statement-tmpl.css`
+
    Styles for HTML statement template.
