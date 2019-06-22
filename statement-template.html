@@ -1,0 +1,90 @@
+"""<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html'; charset=utf-8 />
+    <title>Заявление на предоставление места в общежитии</title>
+    <link rel="stylesheet" href="css/statement-tmpl.css" type="text/css" />
+    <style>
+        @font-face { 
+            font-family: TimesNewRoman; 
+            src: url("fonts/times.ttf"); 
+        } 
+
+        @font-face {
+            font-family: TimesNewRoman;
+            src: url("fonts/timesbd.ttf");
+            font-weight: bold;
+        }
+
+        body {  font-family: TimesNewRoman;  }
+        .u {  text-decoration: underline  }
+    </style>
+</head>
+<body>
+<div class="container">
+<!-- <div class="attachment">
+    Приложение № 5<br/>
+    к приказу Барнаульского филиала<br/>
+    Финуниверситета<br/>
+    от 24.08.2015 г. № 45-о<br/>
+</div> -->
+
+<div class="personal_data">
+    <p class="bold">Директору<br/>
+    Барнаульского филиала Финуниверситета<br/>
+    Ивановой В.А.</p>
+    студента (ки) <span class='u'>"""+f["course"].value+"""</span>
+        курса, группы № <span class='u'>"""+f["groupname"].value+"""</span><br/>
+    Формы обучения <span class='u'>"""+f["eduform"].value+"""</span><br/>
+    <!--div class="right">(очной, заочной)</div--!>
+    основы обучения <span class='u'>"""+f["edubasis"].value+"""</span><br/>
+    <!--div class="right">(целевая, бюджетная, внебюджетная)</div--!>
+    Фамилия <span class='u'>"""+f["lastname"].value+"""</span><br/>
+    Имя <span class='u'>"""+f["firstname"].value+"""</span><br/>
+    Отчество <span class='u'>"""+f["secname"].value+"""</span><br/>
+    Адрес места регистрации (по паспорту): <span class='u'>"""+f["address"].value+"""</span><br/>
+    Контактный телефон: <span class='u'>"""+f["phone"].value+"""</span><br/>
+    Данные родителей:<br/>
+    Фамилия <span class='u'>"""+f["parent_lastname"].value+"""</span><br/>
+    Имя <span class='u'>"""+f["parent_firstname"].value+"""</span><br/>
+    Отчество <span class='u'>"""+f["parent_secname"].value+"""</span><br/>
+    контактный телефон <span class='u'>"""+f["parent_phone"].value+"""</span><br/>
+</div>
+
+<div align="center" class="bold">
+    <p>Заявление на предоставление места в общежитии<br/>
+    (для <span class='u'>проживания</span>)</p>
+</div>
+
+<div class="content offset">
+    <p>Прошу предоставить койко-место в общежитии Барнаульского филиала
+    Финуниверситета на период обучения с <span class='u'>"""+f["period_beg"].value+"""</span> по <span class='u'>"""+f["period_end"].value+"""</span></p>
+    <p>С Положением о студенческом общежитии Барнаульского филиала
+    Финуниверситета ознакомлен(а) согласен (а), Требование
+    законодательства РФ об обязательном регистрационном учете
+    граждан по месту их временного пребывания мне разъяснено и
+    понятно.</p>
+    <p>Обязуюсь заселиться в общежитие вовремя, либо сообщить о причине
+    задержки<br/>
+    (практика, болезнь, отсутствие билетов и т.д.).</p>
+    <p>К моменту заселения обязуюсь предоставить:</p>
+    <ol>
+        <li>*справку о составе семьи (с указанием родства и дат рождений)
+        о всех членах семьи;</li>
+        <li>*справку о состоянии здоровья (форма № 086 у);</li>
+        <li>справку из органов соц. защиты о постановке семьи на учет как
+        малообеспеченной (в оригинале заверенная гербовой печатью);</li>
+        <li>справки, подтверждающие льготную категорию для предоставления
+        жилья (сироты, инвалиды, многодетные и т.д.);</li>
+        <li>справку о неработающих родителях из центра занятости
+        населения (при наличии);</li>
+        <li>справку из пенсионного фонда о размере пенсии
+        нетрудоспособных родителей (при наличии).</li>
+    </ol>
+</div>
+    <p class="bold">* обязательно к предоставлению.</p>
+    <p>Дата_____________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Подпись_______________</p>
+</div>
+</div>
+</body>
+</html>"""
